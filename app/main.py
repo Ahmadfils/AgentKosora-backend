@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from app.api.correction import router as correction_router
 
 app = FastAPI(
-    title="SmartCorrect API",
+    title="AgentKosora API",
     description="AI-powered correction backend for education professionals",
     version="0.1.0"
 )
