@@ -67,6 +67,12 @@ class QuestionCreate(BaseModel):
 
 # ==================== RÉPONSES ====================
 
+class CorrectionStatus(str, Enum):
+    PENDING = "pending"
+    PROCESSING = "processing"
+    COMPLETED = "completed"
+    FAILED = "failed"
+
 class ScanResponse(BaseModel):
     """Réponse de scan OCR"""
     scan_id: str = Field(..., description="ID unique du scan")
